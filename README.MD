@@ -1,4 +1,4 @@
-#Equipy
+**Equipy**
 
 Backend dla aplikacji Equipy służącej do zarządzania wyposazeniem/środkami trwałymi pracowników. Wykonanie w architekturze MVC REST.
 
