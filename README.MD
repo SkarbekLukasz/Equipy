@@ -1,9 +1,24 @@
+#Equipy
+
+Backend dla aplikacji Equipy służącej do zarządzania wyposazeniem/środkami trwałymi pracowników. Wykonanie w architekturze MVC REST.
+
+v.0.8
+- obsługa żądań GET, POST, PUT dla api/assets i api/users (encje Asset i User)
+- obsługa bazy danych H2
+
+**Technologie**
+- Java 17
+- Spring Data JPA
+- Spring Boot
+- Spring Web
+- SQL
+- HTTP
+
 **Autor**
 
-[JavaStart](https://javastart.pl)
+Frontend - Javastart.pl
+Backend - Łukasz Skarbek
 
-**Licencja**
 
-![license](https://i.creativecommons.org/l/by-nc/3.0/pl/88x31.png)
 
-Ten utwór jest dostępny na licencji [Creative Commons Uznanie autorstwa-Użycie niekomercyjne 3.0 Polska](http://creativecommons.org/licenses/by-nc/3.0/pl/).
+
