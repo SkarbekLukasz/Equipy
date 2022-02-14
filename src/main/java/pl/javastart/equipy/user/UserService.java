@@ -55,4 +55,13 @@ public class UserService {
         User savedUser = userRepository.save(userEntity);
         return UserMapper.toDto(savedUser);
     }
+
+    List<UserAssignmentDto> getUserAssignments(Long id) {
+        return userRepository.findById(id)
+                .map(User::getAssignments)
+                .orElseThrow(UserNotFoundException::new)
+                .stream()
+                .map(UserAssignmentMapper::userAssignmentToDto)
+                .collect(Collectors.toList());
+    }
 }

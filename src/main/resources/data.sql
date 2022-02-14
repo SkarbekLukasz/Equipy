@@ -18,3 +18,10 @@ VALUES
     (2, 'Apple MacBook Pro 2015', '13 calowy laptop, i5, 16GB DDR3, SSD256GB, kolor srebrny', 'MBP15X0925336', 1),
     (3, 'Dell Inspirion 3576', '13 calowy laptop, i7, 8GB DDR4, SSD 512GB, kolor czarny', 'DI3576XO526716', 2);
 
+INSERT INTO
+    assignment(id, start, end, asset_id, user_id)
+VALUES
+    (1, '2017-10-08 15:00:00', '2018-10-08 15:00:00', 1, 1),
+    (2, '2018-10-09 12:00:00', null, 2, 1),
+    (3, '2018-10-10 16:00:00', null, 3, 1);
+
