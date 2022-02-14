@@ -2,6 +2,9 @@
 
 Backend dla aplikacji Equipy służącej do zarządzania wyposazeniem/środkami trwałymi pracowników. Wykonanie w architekturze MVC REST.
 
+v.0.9.2
+- obsługa żądania GET dla api/assets/{assetId}/assignments (encja Assignment)
+
 v.0.9.1
 - obsługa żadania GET dla api/users/{id}/assignments (encja Assignment)
 
