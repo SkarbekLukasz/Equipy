@@ -57,4 +57,9 @@ public class AssetController {
         }
         return ResponseEntity.ok(assetService.update(assetDto));
     }
+
+    @GetMapping("/{assetId}/assignments")
+    public List<AssetAssignmentDto> getAssetAssignments(@PathVariable Long assetId) {
+        return assetService.getAssetAssignments(assetId);
+    }
 }
