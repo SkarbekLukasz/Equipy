@@ -9,6 +9,7 @@ import org.springframework.web.util.UriBuilderFactory;
 import org.springframework.web.util.UriComponents;
 
 import java.net.URI;
+import java.time.LocalDateTime;
 
 @RestController
 @RequestMapping("/api/assignments")
@@ -35,5 +36,10 @@ public class AssignmentController {
                 .buildAndExpand(responseAssignment)
                 .toUri();
         return ResponseEntity.created(location).body(responseAssignment);
+    }
+
+    @PostMapping("/{assignmentId}/end")
+    public ResponseEntity<LocalDateTime> endAssignment(@PathVariable Long assignmentId) {
+        return ResponseEntity.accepted().body(assignmentService.endAssignment(assignmentId));
     }
 }

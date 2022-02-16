@@ -6,7 +6,7 @@ public class AssetAssignmentMapper {
 
     static AssetAssignmentDto assetAssignmentToDto(Assignment assignment) {
         AssetAssignmentDto assignmentDto = new AssetAssignmentDto();
-        assignmentDto.setId(assignmentDto.getId());
+        assignmentDto.setId(assignment.getId());
         assignmentDto.setStart(assignment.getStart());
         assignmentDto.setEnd(assignment.getEnd());
         assignmentDto.setUserId(assignment.getUser().getId());

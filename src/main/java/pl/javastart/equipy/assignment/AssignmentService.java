@@ -37,4 +37,15 @@ public class AssignmentService {
         Assignment savedAssignment = assignmentRepository.save(assignmentToSave);
         return AssignmentMapper.toDto(savedAssignment);
     }
+
+    public LocalDateTime endAssignment(Long assignmentId) {
+        Optional<Assignment> assignment = assignmentRepository.findById(assignmentId);
+        Assignment assignmentEntity = assignment.orElseThrow(AssginmentNotFoundException::new);
+        if(assignmentEntity.getEnd() != null) {
+            throw new AssignmentAlreadyEndedException();
+        }
+        assignmentEntity.setEnd(LocalDateTime.now());
+        assignmentRepository.save(assignmentEntity);
+        return assignmentEntity.getEnd();
+    }
 }
