@@ -2,6 +2,9 @@
 
 Backend dla aplikacji Equipy służącej do zarządzania wyposazeniem/środkami trwałymi pracowników. Wykonanie w architekturze MVC REST.
 
+v.1.0
+- pełna obsługa funkcjonalności aplikacji: dodawanie nowych użytkoników i wyposażenia, przypisywanie wyposażenia do użytkowników i ich zwroty, historia wypożyczeń
+
 v.0.9.3
 - obsługa żądania POST dla api/assignments (encja Assignment), czyli możliwość przypisania nowego wyposażenia do pracownika
 
